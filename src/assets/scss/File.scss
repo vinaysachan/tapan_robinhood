@@ -1,0 +1,79 @@
+.scssClass {
+    background-color: pink;
+    text-align: center;
+    padding: 20px 0;
+
+    h2 {
+        color: white;
+        font-family: sans-serif;
+    }
+}
+
+$sizes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 45, 50, 55, 60;
+
+@each $size in $sizes {
+    .fs#{$size} {
+        font-size: #{$size}px !important;
+    }
+
+    .mt#{$size} {
+        margin-top: #{$size}px !important;
+    }
+
+    .mb#{$size} {
+        margin-bottom: #{$size}px !important;
+    }
+
+    .my#{$size} {
+        margin-top: #{$size}px !important;
+        margin-bottom: #{$size}px !important;
+    }
+
+    .mx#{$size} {
+        margin-left: #{$size}px !important;
+        margin-right: #{$size}px !important;
+    }
+
+    .ms#{$size} {
+        margin-left: #{$size}px !important;
+    }
+
+    .me#{$size} {
+        margin-right: #{$size}px !important;
+    }
+
+    .p#{$size} {
+        padding: #{$size}px !important;
+    }
+
+    .pt#{$size} {
+        padding-top: #{$size}px !important;
+    }
+
+    .pb#{$size} {
+        padding-bottom: #{$size}px !important;
+    }
+
+    .py#{$size} {
+        padding-top: #{$size}px !important;
+        padding-bottom: #{$size}px !important;
+    }
+
+    .px#{$size} {
+        padding-left: #{$size}px !important;
+        padding-right: #{$size}px !important;
+    }
+
+    .ps#{$size} {
+        padding-left: #{$size}px !important;
+    }
+
+    .pe#{$size} {
+        padding-right: #{$size}px !important;
+    }
+
+    .lh#{$size} {
+        line-height: #{$size}px !important;
+    }
+
+}
